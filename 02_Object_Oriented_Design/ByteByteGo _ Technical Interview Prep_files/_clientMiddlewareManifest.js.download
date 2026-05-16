@@ -1,0 +1,734 @@
+self.__MIDDLEWARE_MATCHERS = [
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(\\/?index|\\/?index\\.json))?[\\/#\\?]?$",
+    "originalSource": "/"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/pricing(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/pricing"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/two-pointers\\/shift-zeros-to-the-end(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/two-pointers/shift-zeros-to-the-end"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/two-pointers\\/next-lexicographical-sequence(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/two-pointers/next-lexicographical-sequence"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/hash-maps-and-sets\\/introduction-to-hash-maps-and-sets(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/hash-maps-and-sets/introduction-to-hash-maps-and-sets"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/hash-maps-and-sets\\/pair-sum-unsorted(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/hash-maps-and-sets/pair-sum-unsorted"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/hash-maps-and-sets\\/verify-sudoku-board(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/hash-maps-and-sets/verify-sudoku-board"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/hash-maps-and-sets\\/zero-striping(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/hash-maps-and-sets/zero-striping"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/hash-maps-and-sets\\/longest-chain-of-consecutive-numbers(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/hash-maps-and-sets/longest-chain-of-consecutive-numbers"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/hash-maps-and-sets\\/geometric-sequence-triplets(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/hash-maps-and-sets/geometric-sequence-triplets"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/linked-lists\\/introduction-to-linked-lists(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/linked-lists/introduction-to-linked-lists"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/linked-lists\\/linked-list-reversal(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/linked-lists/linked-list-reversal"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/linked-lists\\/remove-the-kth-last-node-from-a-linked-list(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/linked-lists/remove-the-kth-last-node-from-a-linked-list"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/linked-lists\\/linked-list-intersection(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/linked-lists/linked-list-intersection"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/linked-lists\\/lru-cache(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/linked-lists/lru-cache"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/linked-lists\\/palindromic-linked-list(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/linked-lists/palindromic-linked-list"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/linked-lists\\/flatten-a-multi-level-linked-list(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/linked-lists/flatten-a-multi-level-linked-list"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/fast-and-slow-pointers\\/introduction-to-fast-and-slow-pointers(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/fast-and-slow-pointers/introduction-to-fast-and-slow-pointers"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/fast-and-slow-pointers\\/linked-list-loop(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/fast-and-slow-pointers/linked-list-loop"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/fast-and-slow-pointers\\/linked-list-midpoint(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/fast-and-slow-pointers/linked-list-midpoint"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/fast-and-slow-pointers\\/happy-number(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/fast-and-slow-pointers/happy-number"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/sliding-windows\\/introduction-to-sliding-windows(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/sliding-windows/introduction-to-sliding-windows"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/sliding-windows\\/substring-anagrams(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/sliding-windows/substring-anagrams"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/sliding-windows\\/longest-substring-with-unique-characters(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/sliding-windows/longest-substring-with-unique-characters"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/sliding-windows\\/longest-uniform-substring-after-replacements(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/sliding-windows/longest-uniform-substring-after-replacements"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/binary-search\\/introduction-to-binary-search(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/binary-search/introduction-to-binary-search"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/binary-search\\/find-the-insertion-index(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/binary-search/find-the-insertion-index"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/binary-search\\/first-and-last-occurrences-of-a-number(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/binary-search/first-and-last-occurrences-of-a-number"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/binary-search\\/cutting-wood(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/binary-search/cutting-wood"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/binary-search\\/find-the-target-in-a-rotated-sorted-array(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/binary-search/find-the-target-in-a-rotated-sorted-array"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/binary-search\\/find-the-median-from-two-sorted-arrays(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/binary-search/find-the-median-from-two-sorted-arrays"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/binary-search\\/matrix-search(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/binary-search/matrix-search"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/binary-search\\/local-maxima-in-array(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/binary-search/local-maxima-in-array"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/binary-search\\/weighted-random-selection(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/binary-search/weighted-random-selection"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/stacks\\/introduction-to-stacks(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/stacks/introduction-to-stacks"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/stacks\\/valid-parenthesis-expression(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/stacks/valid-parenthesis-expression"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/stacks\\/next-largest-number-to-the-right(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/stacks/next-largest-number-to-the-right"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/stacks\\/evaluate-expression(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/stacks/evaluate-expression"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/stacks\\/repeated-removal-of-adjacent-duplicates(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/stacks/repeated-removal-of-adjacent-duplicates"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/stacks\\/implement-a-queue-using-stacks(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/stacks/implement-a-queue-using-stacks"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/stacks\\/maximums-of-sliding-window(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/stacks/maximums-of-sliding-window"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/heaps\\/introduction-to-heaps(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/heaps/introduction-to-heaps"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/heaps\\/k-most-frequent-strings(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/heaps/k-most-frequent-strings"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/heaps\\/combine-sorted-linked-lists(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/heaps/combine-sorted-linked-lists"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/heaps\\/median-of-an-integer-stream(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/heaps/median-of-an-integer-stream"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/heaps\\/sort-a-k-sorted-array(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/heaps/sort-a-k-sorted-array"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/intervals\\/introduction-to-intervals(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/intervals/introduction-to-intervals"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/intervals\\/merge-overlapping-intervals(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/intervals/merge-overlapping-intervals"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/intervals\\/identify-all-interval-overlaps(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/intervals/identify-all-interval-overlaps"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/intervals\\/largest-overlap-of-intervals(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/intervals/largest-overlap-of-intervals"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/prefix-sums\\/introduction-to-prefix-sums(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/prefix-sums/introduction-to-prefix-sums"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/prefix-sums\\/sum-between-range(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/prefix-sums/sum-between-range"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/prefix-sums\\/k-sum-subarrays(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/prefix-sums/k-sum-subarrays"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/prefix-sums\\/product-array-without-current-element(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/prefix-sums/product-array-without-current-element"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/introduction-to-trees(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/introduction-to-trees"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/invert-binary-tree(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/invert-binary-tree"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/balanced-binary-tree-validation(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/balanced-binary-tree-validation"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/rightmost-nodes-of-a-binary-tree(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/rightmost-nodes-of-a-binary-tree"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/widest-binary-tree-level(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/widest-binary-tree-level"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/binary-search-tree-validation(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/binary-search-tree-validation"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/lowest-common-ancestor(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/lowest-common-ancestor"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/build-binary-tree-from-preorder-and-inorder-traversals(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/build-binary-tree-from-preorder-and-inorder-traversals"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/maximum-sum-of-a-continuous-path-in-a-binary-tree(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/maximum-sum-of-a-continuous-path-in-a-binary-tree"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/binary-tree-symmetry(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/binary-tree-symmetry"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/binary-tree-columns(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/binary-tree-columns"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/kth-smallest-number-in-a-binary-search-tree(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/kth-smallest-number-in-a-binary-search-tree"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/trees\\/serialize-and-deserialize-a-binary-tree(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/trees/serialize-and-deserialize-a-binary-tree"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/tries\\/introduction-to-tries(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/tries/introduction-to-tries"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/tries\\/design-a-trie(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/tries/design-a-trie"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/tries\\/insert-and-search-words-with-wildcards(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/tries/insert-and-search-words-with-wildcards"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/tries\\/find-all-words-on-a-board(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/tries/find-all-words-on-a-board"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/graphs\\/introduction-to-graphs(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/graphs/introduction-to-graphs"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/graphs\\/graph-deep-copy(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/graphs/graph-deep-copy"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/graphs\\/count-islands(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/graphs/count-islands"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/graphs\\/matrix-infection(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/graphs/matrix-infection"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/graphs\\/bipartite-graph-validation(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/graphs/bipartite-graph-validation"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/graphs\\/longest-increasing-path(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/graphs/longest-increasing-path"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/graphs\\/shortest-transformation-sequence(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/graphs/shortest-transformation-sequence"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/graphs\\/merging-communities(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/graphs/merging-communities"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/graphs\\/prerequisites(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/graphs/prerequisites"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/graphs\\/shortest-path(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/graphs/shortest-path"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/graphs\\/connect-the-dots(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/graphs/connect-the-dots"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/backtracking\\/introduction-to-backtracking(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/backtracking/introduction-to-backtracking"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/backtracking\\/find-all-permutations(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/backtracking/find-all-permutations"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/backtracking\\/find-all-subsets(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/backtracking/find-all-subsets"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/backtracking\\/n-queens(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/backtracking/n-queens"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/backtracking\\/combinations-of-a-sum(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/backtracking/combinations-of-a-sum"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/backtracking\\/phone-keypad-combinations(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/backtracking/phone-keypad-combinations"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/dynamic-programming\\/introduction-to-dynamic-programming(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/dynamic-programming/introduction-to-dynamic-programming"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/dynamic-programming\\/climbing-stairs(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/dynamic-programming/climbing-stairs"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/dynamic-programming\\/minimum-coin-combination(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/dynamic-programming/minimum-coin-combination"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/dynamic-programming\\/matrix-pathways(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/dynamic-programming/matrix-pathways"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/dynamic-programming\\/neighborhood-burglary(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/dynamic-programming/neighborhood-burglary"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/dynamic-programming\\/longest-common-subsequence(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/dynamic-programming/longest-common-subsequence"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/dynamic-programming\\/longest-palindrome-in-a-string(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/dynamic-programming/longest-palindrome-in-a-string"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/dynamic-programming\\/maximum-subarray-sum(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/dynamic-programming/maximum-subarray-sum"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/dynamic-programming\\/01-knapsack(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/dynamic-programming/01-knapsack"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/dynamic-programming\\/largest-square-in-a-matrix(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/dynamic-programming/largest-square-in-a-matrix"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/greedy\\/introduction-to-greedy-algorithms(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/greedy/introduction-to-greedy-algorithms"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/greedy\\/jump-to-the-end(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/greedy/jump-to-the-end"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/greedy\\/gas-stations(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/greedy/gas-stations"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/greedy\\/candies(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/greedy/candies"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/sort-and-search\\/introduction-to-sort-and-search(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/sort-and-search/introduction-to-sort-and-search"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/sort-and-search\\/sort-linked-list(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/sort-and-search/sort-linked-list"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/sort-and-search\\/sort-array(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/sort-and-search/sort-array"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/sort-and-search\\/kth-largest-integer(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/sort-and-search/kth-largest-integer"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/sort-and-search\\/dutch-national-flag(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/sort-and-search/dutch-national-flag"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/bit-manipulation\\/introduction-to-bit-manipulation(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/bit-manipulation/introduction-to-bit-manipulation"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/bit-manipulation\\/hamming-weights-of-integers(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/bit-manipulation/hamming-weights-of-integers"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/bit-manipulation\\/lonely-integer(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/bit-manipulation/lonely-integer"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/bit-manipulation\\/swap-odd-and-even-bits(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/bit-manipulation/swap-odd-and-even-bits"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/math-and-geometry\\/introduction-to-math-and-geometry(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/math-and-geometry/introduction-to-math-and-geometry"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/math-and-geometry\\/spiral-traversal(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/math-and-geometry/spiral-traversal"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/math-and-geometry\\/reverse-32-bit-integer(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/math-and-geometry/reverse-32-bit-integer"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/math-and-geometry\\/maximum-collinear-points(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/math-and-geometry/maximum-collinear-points"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/math-and-geometry\\/the-josephus-problem(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/math-and-geometry/the-josephus-problem"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/coding-patterns\\/math-and-geometry\\/triangle-numbers(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/coding-patterns/math-and-geometry/triangle-numbers"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/genai-system-design-interview\\/google-translate(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/genai-system-design-interview/google-translate"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/genai-system-design-interview\\/chatgpt-personal-assistant-chatbot(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/genai-system-design-interview/chatgpt-personal-assistant-chatbot"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/genai-system-design-interview\\/image-captioning(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/genai-system-design-interview/image-captioning"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/genai-system-design-interview\\/retrieval-augmented-generation(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/genai-system-design-interview/retrieval-augmented-generation"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/genai-system-design-interview\\/realistic-face-generation(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/genai-system-design-interview/realistic-face-generation"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/genai-system-design-interview\\/high-resolution-image-synthesis(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/genai-system-design-interview/high-resolution-image-synthesis"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/genai-system-design-interview\\/text-to-image-generation(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/genai-system-design-interview/text-to-image-generation"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/genai-system-design-interview\\/personalized-headshot-generation(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/genai-system-design-interview/personalized-headshot-generation"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/genai-system-design-interview\\/text-to-video-generation(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/genai-system-design-interview/text-to-video-generation"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/machine-learning-system-design-interview\\/introduction-and-overview(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/machine-learning-system-design-interview/introduction-and-overview"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/machine-learning-system-design-interview\\/google-street-view-blurring-system(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/machine-learning-system-design-interview/google-street-view-blurring-system"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/machine-learning-system-design-interview\\/harmful-content-detection(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/machine-learning-system-design-interview/harmful-content-detection"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/machine-learning-system-design-interview\\/event-recommendation-system(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/machine-learning-system-design-interview/event-recommendation-system"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/machine-learning-system-design-interview\\/ad-click-prediction-on-social-platforms(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/machine-learning-system-design-interview/ad-click-prediction-on-social-platforms"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/machine-learning-system-design-interview\\/similar-listings-on-vacation-rental-platforms(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/machine-learning-system-design-interview/similar-listings-on-vacation-rental-platforms"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/machine-learning-system-design-interview\\/people-you-may-know(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/machine-learning-system-design-interview/people-you-may-know"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/mobile-system-design-interview\\/chat-app(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/mobile-system-design-interview/chat-app"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/mobile-system-design-interview\\/stock-trading-app(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/mobile-system-design-interview/stock-trading-app"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/mobile-system-design-interview\\/pagination-library(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/mobile-system-design-interview/pagination-library"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/mobile-system-design-interview\\/hotel-reservation-app(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/mobile-system-design-interview/hotel-reservation-app"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/mobile-system-design-interview\\/google-drive-app(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/mobile-system-design-interview/google-drive-app"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/mobile-system-design-interview\\/youtube-app(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/mobile-system-design-interview/youtube-app"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/mobile-system-design-interview\\/mobile-system-design-building-blocks(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/mobile-system-design-interview/mobile-system-design-building-blocks"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/mobile-system-design-interview\\/quick-reference-cheat-sheet-for-msd-interview(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/mobile-system-design-interview/quick-reference-cheat-sheet-for-msd-interview"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/object-oriented-design-interview\\/oop-fundamentals(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/object-oriented-design-interview/oop-fundamentals"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/object-oriented-design-interview\\/movie-ticket-booking-system(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/object-oriented-design-interview/movie-ticket-booking-system"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/object-oriented-design-interview\\/design-a-unix-file-search(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/object-oriented-design-interview/design-a-unix-file-search"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/object-oriented-design-interview\\/design-a-vending-machine(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/object-oriented-design-interview/design-a-vending-machine"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/object-oriented-design-interview\\/design-an-elevator-system(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/object-oriented-design-interview/design-an-elevator-system"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/object-oriented-design-interview\\/grocery-store-system(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/object-oriented-design-interview/grocery-store-system"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/object-oriented-design-interview\\/design-a-tic-tac-toe-game(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/object-oriented-design-interview/design-a-tic-tac-toe-game"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/object-oriented-design-interview\\/design-a-blackjack-game(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/object-oriented-design-interview/design-a-blackjack-game"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/object-oriented-design-interview\\/design-a-shipping-locker(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/object-oriented-design-interview/design-a-shipping-locker"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/object-oriented-design-interview\\/design-an-automated-teller-machine-atm(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/object-oriented-design-interview/design-an-automated-teller-machine-atm"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/object-oriented-design-interview\\/design-a-restaurant-management-system(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/object-oriented-design-interview/design-a-restaurant-management-system"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/join-discord-community(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/join-discord-community"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/design-a-unique-id-generator-in-distributed-systems(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/design-a-unique-id-generator-in-distributed-systems"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/design-a-notification-system(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/design-a-notification-system"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/design-a-search-autocomplete-system(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/design-a-search-autocomplete-system"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/design-google-drive(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/design-google-drive"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/proximity-service(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/proximity-service"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/nearby-friends(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/nearby-friends"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/google-maps(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/google-maps"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/distributed-message-queue(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/distributed-message-queue"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/metrics-monitoring-and-alerting-system(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/metrics-monitoring-and-alerting-system"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/ad-click-event-aggregation(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/ad-click-event-aggregation"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/distributed-email-service(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/distributed-email-service"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/s3-like-object-storage(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/s3-like-object-storage"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/payment-system(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/payment-system"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/digital-wallet(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/digital-wallet"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/system-design-interview\\/stock-exchange(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/system-design-interview/stock-exchange"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p0-c1-acknowledgements(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p0-c1-acknowledgements"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p2-c0-writing-the-resume(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p2-c0-writing-the-resume"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p2-c1-tech-resume-basics(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p2-c1-tech-resume-basics"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p2-c2-resume-structure(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p2-c2-resume-structure"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p2-c3-standing-out(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p2-c3-standing-out"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p2-c4-common-mistakes(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p2-c4-common-mistakes"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p2-c5-different-experience-levels-different-career-paths(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p2-c5-different-experience-levels-different-career-paths"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p2-c6-exercises-to-polish-your-resume(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p2-c6-exercises-to-polish-your-resume"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p2-c7-beyond-the-resume(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p2-c7-beyond-the-resume"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p3-c0-examples-and-inspiration(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p3-c0-examples-and-inspiration"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p3-c1-good-resume-template-principles(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p3-c1-good-resume-template-principles"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p3-c2-resume-templates(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p3-c2-resume-templates"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p3-c3-resume-improvement-examples(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p3-c3-resume-improvement-examples"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p3-c4-advice-for-hiring-managers-on-running-a-good-screening-process(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p3-c4-advice-for-hiring-managers-on-running-a-good-screening-process"
+  },
+  {
+    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/courses\\/tech-resume\\/p4-c0-conclusion(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/courses/tech-resume/p4-c0-conclusion"
+  }
+];self.__MIDDLEWARE_MATCHERS_CB && self.__MIDDLEWARE_MATCHERS_CB()
